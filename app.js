@@ -33,7 +33,7 @@ Complete the exercise in the space below:
 */
 
 function isCharAVowel(vowel){
-    if(vowel.toLowerCase()==='a' || vowel.toLowerCase()==='o' || vowel.toLowerCase()==='i'){
+    if(vowel.toLowerCase()==='a' || vowel.toLowerCase()==='o' || vowel.toLowerCase()==='i' || vowel.toLowerCase()==='u'){
         return true
     }
     else {
