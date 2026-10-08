@@ -9,15 +9,14 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 
-function isAdult(age){
-    if(age>=18){
-        return 'Adult'
-    }
-    else{
-        return 'Minor'
-    }
+function isAdult(age) {
+  if (age >= 18) {
+    return "Adult";
+  } else {
+    return "Minor";
+  }
 }
-console.log('Exercise 2 Result:', isAdult(23))
+console.log("Exercise 2 Result:", isAdult(23));
 
 /*
 Exercise 3: isCharAVowel()
@@ -32,16 +31,20 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-function isCharAVowel(vowel){
-    if(vowel.toLowerCase()==='a' || vowel.toLowerCase()==='o' || vowel.toLowerCase()==='i' || vowel.toLowerCase()==='u'){
-        return true
-    }
-    else {
-        return false
-    }
+function isCharAVowel(vowel) {
+  if (
+    vowel.toLowerCase() === "a" ||
+    vowel.toLowerCase() === "o" ||
+    vowel.toLowerCase() === "i" ||
+    vowel.toLowerCase() === "u"
+  ) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-console.log('Exercise 3 Result:', isCharAVowel('A'));
+console.log("Exercise 3 Result:", isCharAVowel("A"));
 
 /*
 Exercise 4: generateEmail()
@@ -55,10 +58,10 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 
-function generateEmail(name,domain){
-return name+'@'+domain
+function generateEmail(name, domain) {
+  return name + "@" + domain;
 }
-console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"));
 
 /*
 Exercise 5: greetUser()
@@ -72,12 +75,11 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-function greetUser(name,timeOfTheDay){
-    return 'Good '+timeOfTheDay+', '+name
+function greetUser(name, timeOfTheDay) {
+  return "Good " + timeOfTheDay + ", " + name;
 }
 
-
-console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+console.log("Exercise 5 Result:", greetUser("Sam", "morning"));
 
 /*
 Exercise 6: maxOfThree()
@@ -90,23 +92,19 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
-function maxOfThree(num1,num2,num3){
-    let max
-    if(num1>num2 && num1>num3){
-        max=num1
-    }
-    else if(num2>num1 && num2>num3){
-        max=num2
-    }
-    else{
-        max=num3
-    }
- return max
+function maxOfThree(num1, num2, num3) {
+  let max;
+  if (num1 > num2 && num1 > num3) {
+    max = num1;
+  } else if (num2 > num1 && num2 > num3) {
+    max = num2;
+  } else {
+    max = num3;
+  }
+  return max;
 }
 
-
-
-console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
 
 /*
 Exercise 7: calculateTip()
@@ -120,11 +118,11 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
-function calculateTip(billAmount,tipPercenteage){
-    let Total = (tipPercenteage/100)* billAmount
-    return Total
+function calculateTip(billAmount, tipPercenteage) {
+  let Total = (tipPercenteage / 100) * billAmount;
+  return Total;
 }
-console.log('Exercise 7 Result:', calculateTip(50, 20));
+console.log("Exercise 7 Result:", calculateTip(50, 20));
 
 /*
 Exercise 8: convertTemperature()
@@ -139,20 +137,17 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 
 Complete the exercise in the space below:
 */
-function convertTemperature(temperature,scale){
-  if(scale.toLowerCase()==='c'){
-    return (temperature -32)*(5/9)
-  }
-  else if(scale.toLowerCase()==='f'){
-    return (temperature*9/5)+32
-  }
-  else{
-    return 'Enter a Valid Scale'
+function convertTemperature(temperature, scale) {
+  if (scale.toLowerCase() === "c") {
+    return (temperature - 32) * (5 / 9);
+  } else if (scale.toLowerCase() === "f") {
+    return (temperature * 9) / 5 + 32;
+  } else {
+    return "Enter a Valid Scale";
   }
 }
 
-
-console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log("Exercise 8 Result:", convertTemperature(32, "C"));
 
 /*
 Exercise 9: basicCalculator()
@@ -170,25 +165,21 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-function basicCalculator(num1,num2,operation){
-    if(operation.toLowerCase()==='add'){
-        return num1+num2
-    }
-    else if(operation.toLowerCase()==='subtract'){
-        return num1-num2
-    }
-    else if(operation.toLowerCase()==='multiply'){
-        return num1*num2
-    }
-    else if(operation.toLowerCase()==='divide'){
-        return num1/num2
-    }
-    else{
-        return 'Please write a correct operator'
-    }
+function basicCalculator(num1, num2, operation) {
+  if (operation.toLowerCase() === "add") {
+    return num1 + num2;
+  } else if (operation.toLowerCase() === "subtract") {
+    return num1 - num2;
+  } else if (operation.toLowerCase() === "multiply") {
+    return num1 * num2;
+  } else if (operation.toLowerCase() === "divide") {
+    return num1 / num2;
+  } else {
+    return "Please write a correct operator";
+  }
 }
 
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
 
 /*
 Exercise 10: calculateGrade()
@@ -205,28 +196,23 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
-function calculateGrade(grade){
-    if(grade>=90){
-        return'A'
-    }
-    else if(grade>=80 && grade<=89){
-        return'B'
-    }
-    else if(grade>=70 && grade<=79 ){
-        return 'C'
-    }
-    else if(grade>=60 && grade<=69){
-        return'D'
-    }
-    else if(grade<60){
-        return 'F'
-    }
-    else{
-        return'Enter the correct grade'
-    }
+function calculateGrade(grade) {
+  if (grade >= 90) {
+    return "A";
+  } else if (grade >= 80 && grade <= 89) {
+    return "B";
+  } else if (grade >= 70 && grade <= 79) {
+    return "C";
+  } else if (grade >= 60 && grade <= 69) {
+    return "D";
+  } else if (grade < 60) {
+    return "F";
+  } else {
+    return "Enter the correct grade";
+  }
 }
 
-console.log('Exercise 10 Result:', calculateGrade(73));
+console.log("Exercise 10 Result:", calculateGrade(73));
 
 /*
 Exercise 11: createUsername()
@@ -244,19 +230,43 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
 Complete the exercise in the space below:
 */
 
-function createUsername(firstName,lastName){
-    
+function createUsername(firstName, lastName) {
+  const nameCount = Number(firstName.length + lastName.length);
+  let username =
+    firstName.charAt(0) +
+    firstName.charAt(1) +
+    firstName.charAt(2) +
+    lastName.charAt(0) +
+    lastName.charAt(1) +
+    lastName.charAt(2) +
+    nameCount;
+  return username;
 }
 
+console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
 
-console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+/*
+Exercise 12: numArgs()
 
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
 
+Complete the exercise in the space below:
+*/
 
+function numArgs(x, y, z) {
+  return arguments.length;
+}
 
+console.log("Exercise 12 Result:", numArgs(1, 2, 3, 4));
 
+// How to access each induvial character in a String?
 
+// we access it through the method charAt()  or just treat it like an array with the characters representing the different indexes
 
+// How to get the length of a String?
 
+// just use the .length method
 
-
+// TO know how many arguments is being passed we can use argument.length
+// TO know how many arguments where defined in the beginning we do functionName.length
